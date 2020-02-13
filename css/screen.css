@@ -1,14 +1,15 @@
 form {
   display:inline-block;
   border: 2px solid ;
-  width: 300px;
+  width: 700px;
   float: left;
-  margin: 10px 0;
+  margin: 0 auto;
   padding: 10px;
   white-space: pre;
+  background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
 }
 input {
-  width: 200px;
+  width: 75%;
 }
 h3 {
   margin: 0;
@@ -42,9 +43,23 @@ h3 {
   background-color: #4967B3;
 }
 
+.labels {
+  float: left;
+  width: 25%;
+  margin-top: 5px;
+}
+
+.inputs {
+  float: left;
+  width: 75%;
+  margin-top: 5px;
+}
+
 #buttons {
   width: 100%;
   display: inline-block;
+  float: left;
+  clear: left;
   border: 1px solid red;
   margin: 0;
   padding: 0;
@@ -53,8 +68,10 @@ h3 {
 #submit:hover {
   background-color: #FF7F12;
 }
-@include media('>=480px') {
-  max-width: 400px;
-  background-color: white;
-  margin : 20px auto;
+
+@media screen and (max-width: 600px) {
+   form, .labels, .inputs, #submit {
+     width: 100%;
+     margin-top: 0;
+   }
 }
