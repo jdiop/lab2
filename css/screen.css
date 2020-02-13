@@ -1,0 +1,60 @@
+form {
+  display:inline-block;
+  border: 2px solid ;
+  width: 300px;
+  float: left;
+  margin: 10px 0;
+  padding: 10px;
+  white-space: pre;
+}
+input {
+  width: 200px;
+}
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+#submit {
+  float: none;
+  width: 49%;
+  background-color: #FFB323;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#reset {
+  float: none;
+  width: 49%;
+  background-color: #3C73FF;
+  color: white;
+  border: none;
+  padding : 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  display:inline-block;
+}
+
+#reset:hover {
+  background-color: #4967B3;
+}
+
+#buttons {
+  width: 100%;
+  display: inline-block;
+  border: 1px solid red;
+  margin: 0;
+  padding: 0;
+}
+
+#submit:hover {
+  background-color: #FF7F12;
+}
+@include media('>=480px') {
+  max-width: 400px;
+  background-color: white;
+  margin : 20px auto;
+}
